@@ -13,7 +13,7 @@ int main(){
     char estado_c1;
     char codigo_Cartas_c1[20];
     char nome_Cidade_c1[50];
-    int populacao_c1;
+    unsigned long int populacao_c1;
     float area_km_quadrado_c1;
     float pib_c1;
     int pontos_turisticos_c1;
@@ -24,7 +24,7 @@ int main(){
     char estado_c2;
     char codigo_Cartas_c2[20];
     char nome_Cidade_c2[50];
-    int populacao_c2;
+    unsigned long int populacao_c2;
     float area_km_quadrado_c2;
     float pib_c2;
     int pontos_turisticos_c2;
@@ -61,6 +61,9 @@ int main(){
     // --- Cálculo da Densidade Populacional e do PIB per Capita da carta 1
     densidade_populacional_c1 = (float)populacao_c1 / area_km_quadrado_c1;
     pib_per_capita_c1 = (pib_c1 * 1000000000) / (float)populacao_c1;
+
+    // --- Cálculo do Super Poder da Carta 1
+
 
     // --- Entrada de Dados da Carta 2 ---
     printf("\nDados da Carta 2: \n");

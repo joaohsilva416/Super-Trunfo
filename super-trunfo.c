@@ -70,7 +70,7 @@ int main(){
     inverso_densidade_populacional_c1 = area_km_quadrado_c1 / populacao_c1;
 
     // --- Cálculo do Super Poder da carta 1
-
+    super_Poder_c1 = populacao_c1 + area_km_quadrado_c1 + pib_per_capita_c1 + inverso_densidade_populacional_c1;
 
     // --- Entrada de Dados da Carta 2 ---
     printf("\nDados da Carta 2: \n");
@@ -107,6 +107,7 @@ int main(){
     inverso_densidade_populacional_c2 = area_km_quadrado_c2 / populacao_c2;
 
     // --- Cálculo do Super Poder da carta 2
+    super_Poder_c2 = populacao_c2 + area_km_quadrado_c2 + pib_per_capita_c2 + inverso_densidade_populacional_c2;
 
     // Imprimindo as Cartas 1 e 2
     // --- Carta 1 ---
@@ -119,7 +120,8 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib_c1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_c1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_c1);
-    printf("PIB per Capita: %.2f reais", pib_per_capita_c1);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita_c1);
+    printf("Super Poder: %.2f", super_Poder_c1);
 
     printf("\n"); // Pular linha
 
@@ -133,7 +135,8 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib_c2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_c2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_c2);
-    printf("PIB per Capita: %.2f reais", pib_per_capita_c2);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita_c2);
+    printf("Super Poder: %.2f", super_Poder_c2);
 
     return 0;
 }

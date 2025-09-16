@@ -19,6 +19,8 @@ int main(){
     int pontos_turisticos_c1;
     float densidade_populacional_c1;
     float pib_per_capita_c1;
+    float inverso_densidade_populacional_c1;
+    float super_Poder_c1;
 
     // --- Variáveis da Carta 2 ---
     char estado_c2;
@@ -30,6 +32,8 @@ int main(){
     int pontos_turisticos_c2;
     float densidade_populacional_c2;
     float pib_per_capita_c2;
+    float inverso_densidade_populacional_c2;
+    float super_Poder_c2;
 
     // --- Entrada de Dados da Carta 1 ---
     printf("Dados da Carta 1: \n");
@@ -62,7 +66,10 @@ int main(){
     densidade_populacional_c1 = (float)populacao_c1 / area_km_quadrado_c1;
     pib_per_capita_c1 = (pib_c1 * 1000000000) / (float)populacao_c1;
 
-    // --- Cálculo do Super Poder da Carta 1
+    // --- Cálculo do inverso da Densidade Populacional da carta 1
+    inverso_densidade_populacional_c1 = area_km_quadrado_c1 / populacao_c1;
+
+    // --- Cálculo do Super Poder da carta 1
 
 
     // --- Entrada de Dados da Carta 2 ---
@@ -95,6 +102,11 @@ int main(){
     // --- Cálculo da Densidade Populacional e do PIB per Capita da carta 2
     densidade_populacional_c2 = (float)populacao_c2 / area_km_quadrado_c2;
     pib_per_capita_c2 = (pib_c2 * 1000000000) / (float)populacao_c2;
+
+    // --- Cálculo do inverso da Densidade Populacional da carta 2
+    inverso_densidade_populacional_c2 = area_km_quadrado_c2 / populacao_c2;
+
+    // --- Cálculo do Super Poder da carta 2
 
     // Imprimindo as Cartas 1 e 2
     // --- Carta 1 ---

@@ -51,7 +51,7 @@ int main(){
     nome_Cidade_c1[strcspn(nome_Cidade_c1, "\n")] = 0; // fgets inclui o '\n' na string. Esta linha o localiza e o substitui por um terminador nulo ('\0') para "limpar" a string.
     
     printf("Digite o número de habitantes da cidade: ");
-    scanf("%d", &populacao_c1);
+    scanf("%lu", &populacao_c1);
     
     printf("Digite a área (em km ao quadrado): ");
     scanf("%f", &area_km_quadrado_c1);
@@ -88,7 +88,7 @@ int main(){
     nome_Cidade_c2[strcspn(nome_Cidade_c2, "\n")] = 0; // fgets inclui o '\n' na string. Esta linha o localiza e o substitui por um terminador nulo ('\0') para "limpar" a string.
     
     printf("Digite o número de habitantes da cidade: ");
-    scanf("%d", &populacao_c2);
+    scanf("%lu", &populacao_c2);
     
     printf("Digite a área (em km ao quadrado): ");
     scanf("%f", &area_km_quadrado_c2);
@@ -136,7 +136,46 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_c2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_c2);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita_c2);
-    printf("Super Poder: %.2f", super_Poder_c2);
+    printf("Super Poder: %.2f\n", super_Poder_c2);
+
+    // Variável de comparação das cartas
+    // População
+    int carta1_venceu_pop = populacao_c1 > populacao_c2;
+    int carta2_venceu_pop = populacao_c2 > populacao_c1;
+
+    // Área
+    int carta1_venceu_area = area_km_quadrado_c1 > area_km_quadrado_c2;
+    int carta2_venceu_area = area_km_quadrado_c2 > area_km_quadrado_c1;
+
+    // PIB
+    int carta1_venceu_pib = pib_c1 > pib_c2;
+    int carta2_venceu_pib = pib_c2 > pib_c1;
+
+    // Pontos Turísticos
+    int carta1_venceu_pontos_turisticos = pontos_turisticos_c1 > pontos_turisticos_c2;
+    int carta2_venceu_pontos_turisticos = pontos_turisticos_c2 > pontos_turisticos_c1;
+
+    // Densidade Populacional
+    int carta1_venceu_densidade = densidade_populacional_c1 < densidade_populacional_c2;
+    int carta2_venceu_densidade = densidade_populacional_c2 < densidade_populacional_c1;
+
+    // PIB per capita
+    int carta1_venceu_pib_per_capita = pib_per_capita_c1 > pib_per_capita_c2;
+    int carta2_venceu_pib_per_capita = pib_per_capita_c2 > pib_per_capita_c1;
+
+    // Super Poder
+    int carta1_venceu_super_poder = super_Poder_c1 > super_Poder_c2;
+    int carta2_venceu_super_poder = super_Poder_c2 > super_Poder_c1;
+
+    // Imprimindo a comparação das cartas
+    printf("\nComparação das Cartas: \n");
+    printf("População: Carta %d venceu (%d)\n", 1 * carta1_venceu_pop + 2 * carta2_venceu_pop, carta1_venceu_pop);
+    printf("Área: Carta %d venceu (%d)\n", 1 * carta1_venceu_area + 2 * carta2_venceu_area, carta1_venceu_area);
+    printf("PIB: Carta %d venceu (%d)\n", 1 * carta1_venceu_pib + 2 * carta2_venceu_pib, carta1_venceu_pib);
+    printf("Pontos Turísticos: Carta %d venceu (%d)\n", 1 * carta1_venceu_pontos_turisticos + 2 * carta2_venceu_pontos_turisticos, carta1_venceu_pontos_turisticos);
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", 1 * carta1_venceu_densidade + 2 * carta2_venceu_densidade, carta1_venceu_densidade);
+    printf("PIB per Capita: Carta %d venceu (%d)\n", 1 * carta1_venceu_pib_per_capita + 2 * carta2_venceu_pib_per_capita, carta1_venceu_pib_per_capita);
+    printf("Super Poder: Carta %d venceu (%d)\n", 1 * carta1_venceu_super_poder + 2 * carta2_venceu_super_poder, carta1_venceu_super_poder);
 
     return 0;
 }

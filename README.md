@@ -16,15 +16,13 @@ O aprendizado foi estruturado em 2 temas cada um com três níveis:
     * **Nível 2: Aventureiro** 
     * **Nível 3: Mestre** 
 
-Este documento detalha a implementação e os resultados do **Nível Novato**, que já foi concluído.
-
 ---
 
 ## 📊 Status do Projeto
 
 ### Tema 1: Super Trunfo em C: fundamentos e técnicas avançadas
   * [x] **Nível Novato: Criando as Cartas do Super Trunfo**
-  * [ ] Nível Aventureiro: Calculando Densidade Populacional e PIB per Capita
+  * [x] **Nível Aventureiro: Calculando Densidade Populacional e PIB per Capita**
   * [ ] Nível Mestre: Batalha de Cartas no Super Trunfo
 
 ---
@@ -59,11 +57,35 @@ Neste primeiro nível, o objetivo foi construir a base do jogo: um sistema para 
 
 Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificações:
 
-* Implementação do cadastro e exibição de apenas **duas cartas**.
-* O código é uma **sequência simples de instruções**, sem o uso de estruturas de repetição (`for`, `while`) ou de decisão (`if`, `else`).
+* Implementação do cadastro e exibição de apenas duas cartas.
+* O código é uma sequência simples de instruções, sem o uso de estruturas de repetição (`for`, `while`) ou de decisão (`if`, `else`).
 * O foco exclusivo foi na leitura, armazenamento e exibição de informações, sem lógicas de comparação ou mecânicas de jogo.
 
----
+### 🚀 Nível 2: Aventureiro - Calculando Densidade Populacional e PIB per Capita (Concluído)
+
+Neste nível, o programa evoluiu para além do simples cadastro de cartas. O objetivo foi aprimorar o sistema para calcular e exibir duas novas e importantes informações para cada cidade: a densidade populacional e o PIB per capita. Essa etapa focou na realização de operações aritméticas com os dados previamente inseridos pelo usuário.
+
+### ✅ Requisitos Cumpridos
+#### Requisitos Funcionais
+
+* [x] Manutenção das Funcionalidades Básicas: O programa continua lendo e exibindo todos os dados das duas cartas, conforme implementado no nível anterior.
+* [x] Cálculo de Densidade Populacional: O programa calcula corretamente a densidade populacional (População / Área) e armazena o resultado em uma variável de ponto flutuante (float).
+* [x] Cálculo do PIB per Capita: O programa calcula corretamente o PIB per capita (PIB / População) e armazena o resultado em uma variável de ponto flutuante (float).
+* [x] Exibição dos Novos Dados: A densidade populacional e o PIB per capita calculados são exibidos na tela para cada carta, formatados com duas casas decimais.
+
+#### Requisitos Não Funcionais
+
+* [x] **Usabilidade**: O programa continua fácil de usar, com instruções claras para o usuário.
+* [x] **Legibilidade**: O código-fonte permanece bem indentado, comentado e com variáveis de nomes significativos.
+* [x] **Corretude**: O programa compila sem erros e executa as operações matemáticas conforme o esperado.
+* [x] **Eficiência**: Os cálculos são realizados de forma direta e eficiente.
+
+📜 Simplificações e Restrições do Desafio
+
+Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificações:
+
+* Implementação do cadastro, cálculo e exibição para apenas duas cartas.
+* O código continua sendo uma sequência simples de instruções, sem o uso de estruturas de repetição (`for`, `while`) ou de decisão (`if`, `else`).
 
 ## ⚙️ Como Compilar e Executar
 
@@ -87,60 +109,3 @@ Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificaç
 4.  **Uso:**
     * O programa solicitará que você insira os dados da Carta 1 e, em seguida, da Carta 2.
     * Após a inserção de todos os dados, as informações das duas cartas serão exibidas no console.
-
-### Exemplo de Saída na Tela
-
-```
-*** Cartas Cadastradas ***
-
-Carta 1: 
-Estado: A
-Código: A01
-Nome da Cidade: São Paulo
-População: 12325000
-Área: 1521.11 km²
-PIB: 699.28 bilhões de reais
-Número de Pontos Turísticos: 50
-
-Carta 2:
-Estado: B
-Código: B02
-Nome da Cidade: Rio de Janeiro
-População: 6748000
-Área: 1200.25 km²
-PIB: 300.50 bilhões de reais
-Número de Pontos Turísticos: 30
-```
-🚀 Nível 2: Aventureiro - Calculando Densidade Populacional e PIB per Capita (Concluído)
-
-Neste nível, o programa evoluiu para além do simples cadastro de cartas. O objetivo foi aprimorar o sistema para calcular e exibir duas novas e importantes informações para cada cidade: a densidade populacional e o PIB per capita. Essa etapa focou na realização de operações aritméticas com os dados previamente inseridos pelo usuário.
-
-✅ Requisitos Cumpridos
-
-Requisitos Funcionais
-
-    [x] Manutenção das Funcionalidades Básicas: O programa continua lendo e exibindo todos os dados das duas cartas, conforme implementado no nível anterior.
-
-    [x] Cálculo de Densidade Populacional: O programa calcula corretamente a densidade populacional (População / Área) e armazena o resultado em uma variável de ponto flutuante (float).
-
-    [x] Cálculo do PIB per Capita: O programa calcula corretamente o PIB per capita (PIB / População) e armazena o resultado em uma variável de ponto flutuante (float).
-
-    [x] Exibição dos Novos Dados: A densidade populacional e o PIB per capita calculados são exibidos na tela para cada carta, formatados com duas casas decimais.
-
-Requisitos Não Funcionais
-
-    [x] Usabilidade: O programa continua fácil de usar, com instruções claras para o usuário.
-
-    [x] Legibilidade: O código-fonte permanece bem indentado, comentado e com variáveis de nomes significativos.
-
-    [x] Corretude: O programa compila sem erros e executa as operações matemáticas conforme o esperado.
-
-    [x] Eficiência: Os cálculos são realizados de forma direta e eficiente.
-
-📜 Simplificações e Restrições do Desafio
-
-Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificações:
-
-    Implementação do cadastro, cálculo e exibição para apenas duas cartas.
-
-    O código continua sendo uma sequência simples de instruções, sem o uso de estruturas de repetição (for, while) ou de decisão (if, else).

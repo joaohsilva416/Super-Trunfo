@@ -111,3 +111,36 @@ População: 6748000
 PIB: 300.50 bilhões de reais
 Número de Pontos Turísticos: 30
 ```
+🚀 Nível 2: Aventureiro - Calculando Densidade Populacional e PIB per Capita (Concluído)
+
+Neste nível, o programa evoluiu para além do simples cadastro de cartas. O objetivo foi aprimorar o sistema para calcular e exibir duas novas e importantes informações para cada cidade: a densidade populacional e o PIB per capita. Essa etapa focou na realização de operações aritméticas com os dados previamente inseridos pelo usuário.
+
+✅ Requisitos Cumpridos
+
+Requisitos Funcionais
+
+    [x] Manutenção das Funcionalidades Básicas: O programa continua lendo e exibindo todos os dados das duas cartas, conforme implementado no nível anterior.
+
+    [x] Cálculo de Densidade Populacional: O programa calcula corretamente a densidade populacional (População / Área) e armazena o resultado em uma variável de ponto flutuante (float).
+
+    [x] Cálculo do PIB per Capita: O programa calcula corretamente o PIB per capita (PIB / População) e armazena o resultado em uma variável de ponto flutuante (float).
+
+    [x] Exibição dos Novos Dados: A densidade populacional e o PIB per capita calculados são exibidos na tela para cada carta, formatados com duas casas decimais.
+
+Requisitos Não Funcionais
+
+    [x] Usabilidade: O programa continua fácil de usar, com instruções claras para o usuário.
+
+    [x] Legibilidade: O código-fonte permanece bem indentado, comentado e com variáveis de nomes significativos.
+
+    [x] Corretude: O programa compila sem erros e executa as operações matemáticas conforme o esperado.
+
+    [x] Eficiência: Os cálculos são realizados de forma direta e eficiente.
+
+📜 Simplificações e Restrições do Desafio
+
+Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificações:
+
+    Implementação do cadastro, cálculo e exibição para apenas duas cartas.
+
+    O código continua sendo uma sequência simples de instruções, sem o uso de estruturas de repetição (for, while) ou de decisão (if, else).

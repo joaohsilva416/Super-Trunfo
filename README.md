@@ -23,7 +23,7 @@ O aprendizado foi estruturado em 2 temas cada um com três níveis:
 ### Tema 1: Super Trunfo em C: fundamentos e técnicas avançadas
   * [x] **Nível Novato: Criando as Cartas do Super Trunfo**
   * [x] **Nível Aventureiro: Calculando Densidade Populacional e PIB per Capita**
-  * [ ] Nível Mestre: Batalha de Cartas no Super Trunfo
+  * [x] Nível Mestre: Batalha de Cartas no Super Trunfo
 
 ---
 
@@ -66,6 +66,7 @@ Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificaç
 Neste nível, o programa evoluiu para além do simples cadastro de cartas. O objetivo foi aprimorar o sistema para calcular e exibir duas novas e importantes informações para cada cidade: a densidade populacional e o PIB per capita. Essa etapa focou na realização de operações aritméticas com os dados previamente inseridos pelo usuário.
 
 ### ✅ Requisitos Cumpridos
+
 #### Requisitos Funcionais
 
 * [x] Manutenção das Funcionalidades Básicas: O programa continua lendo e exibindo todos os dados das duas cartas, conforme implementado no nível anterior.
@@ -80,12 +81,32 @@ Neste nível, o programa evoluiu para além do simples cadastro de cartas. O obj
 * [x] **Corretude**: O programa compila sem erros e executa as operações matemáticas conforme o esperado.
 * [x] **Eficiência**: Os cálculos são realizados de forma direta e eficiente.
 
-📜 Simplificações e Restrições do Desafio
+### 📜 Simplificações e Restrições do Desafio
 
 Conforme as regras do nível, o desenvolvimento seguiu as seguintes simplificações:
 
 * Implementação do cadastro, cálculo e exibição para apenas duas cartas.
 * O código continua sendo uma sequência simples de instruções, sem o uso de estruturas de repetição (`for`, `while`) ou de decisão (`if`, `else`).
+
+### 🚀 Nível 3: Mestre - Batalha de Cartas no Super Trunfo (Concluído)
+
+No desafio final, o projeto culmina com a implementação da mecânica de batalha entre as cartas. O foco foi utilizar operadores relacionais e realizar conversões de tipo para comparar os atributos, determinar a carta vencedora em cada categoria e introduzir um novo atributo estratégico: o "Super Poder".
+
+### ✅ Requisitos Cumpridos
+
+#### Requisitos Funcionais
+
+* [x] Manutenção das Funcionalidades Anteriores: O programa mantém a leitura de dados e os cálculos de densidade populacional e PIB per capita.
+* [x] Cálculo do Super Poder: O programa calcula corretamente o "Super Poder" de cada carta, somando todos os atributos numéricos (população, área, PIB, pontos turísticos, PIB per capita e o inverso da densidade populacional), com atenção à conversão de tipos.
+* [x] Comparação de Atributos: O programa compara as duas cartas em todos os atributos numéricos. A lógica considera que o maior valor vence, com exceção da densidade populacional, onde o menor valor é o vencedor.
+* [x] Exibição dos Resultados: Os resultados de cada comparação são exibidos de forma clara, indicando qual carta venceu e mostrando um valor booleano (1 para vitória da Carta 1, 0 para vitória da Carta 2).
+
+#### Requisitos Não Funcionais
+
+* [x] **Usabilidade**: A interface do programa continua clara e intuitiva.
+* [x] **Legibilidade**: O código-fonte está bem estruturado, comentado e de fácil compreensão.
+* [x] **Corretude**: O programa compila sem erros e executa todas as lógicas de cálculo e comparação de forma precisa.
+* [x] **Eficiência**: As operações são realizadas de maneira eficiente, sem sobrecarga desnecessária.
 
 ## ⚙️ Como Compilar e Executar
 

@@ -25,6 +25,19 @@ O aprendizado foi estruturado em 2 temas cada um com três níveis:
   * [x] **Nível Aventureiro: Calculando Densidade Populacional e PIB per Capita**
   * [x] **Nível Mestre: Batalha de Cartas no Super Trunfo**
 
+### Tema 2: Super Trunfo em C: desenvolvendo a lógica do jogo
+   * [x] **Nível 1: Novato** - Comparando Cartas do Super Trunfo
+   * [x] **Nível 2: Aventureiro** - Interatividade no Super Trunfo
+   * [x] **Nível 3: Mestre** - Implementando Comparações Avançadas com Atributos Múltiplos em C
+
+---
+
+## Nota sobre o Código-Fonte
+
+Este README documenta a jornada de aprendizado completa, detalhando os desafios de todos os níveis. O arquivo `super-trunfo.c` presente neste projeto é o **resultado final**, implementando todos os requisitos do **Tema 2, Nível Mestre**.
+
+As lógicas dos níveis anteriores (como a comparação de um único atributo ou o "Super Poder" do Tema 1) foram aprimoradas e substituídas ao longo dessa evolução para chegar a esta versão final.
+
 ---
 
 ## 🛠️ Tecnologia Utilizada
